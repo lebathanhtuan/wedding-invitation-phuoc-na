@@ -106,18 +106,18 @@ export const vi = {
     event1: {
       title: 'Lễ Vu Quy',
       location: 'Nhà gái',
-      address: 'Điện Thọ, Điện Bàn, Quảng Nam',
+      address: 'Xã Điện Bàn Tây, TP. Đà Nẵng',
     },
     event2: {
       title: 'Rước Dâu',
       location: 'Nhà gái',
-      address: 'Điện Thọ, Điện Bàn, Quảng Nam',
+      address: 'Xã Điện Bàn Tây, TP. Đà Nẵng',
     },
     event3: {
       title: 'Lễ Thành Hôn',
       subLocation: 'Ủy Ban Nhân Dân',
       location: 'Xã Điện Bàn Tây',
-      address: 'Thôn Phong Thử, Xã Điện Bàn Tây, Thành Phố Đà Nẵng',
+      address: 'Xã Điện Bàn Tây, TP. Đà Nẵng',
     },
   },
   intention: {

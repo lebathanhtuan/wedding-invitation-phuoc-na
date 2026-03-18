@@ -132,7 +132,7 @@ function Event() {
                             {t('event.event3.subLocation')}
                           </span>
                         )}
-                        <span style={{ fontWeight: 700 }}>
+                        <span style={{ fontWeight: 700, fontSize: 15 }}>
                           {t('event.event3.location')}
                         </span>
                         {i18n.language === 'en' && (
@@ -141,12 +141,7 @@ function Event() {
                           </span>
                         )}
                       </T.Text>
-                      <T.Text
-                        font="cambria"
-                        weight="bold"
-                        size="sm"
-                        style={{ lineHeight: 1.2 }}
-                      >
+                      <T.Text font="cambria" weight="bold" size="sm">
                         {t('event.event3.address')}
                       </T.Text>
                     </>

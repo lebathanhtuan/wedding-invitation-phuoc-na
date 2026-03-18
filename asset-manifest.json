@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-invitation-phuoc-na/static/css/main.4871281f.css",
-    "main.js": "/wedding-invitation-phuoc-na/static/js/main.75b15176.js",
+    "main.js": "/wedding-invitation-phuoc-na/static/js/main.dc811790.js",
     "static/js/453.060837b5.chunk.js": "/wedding-invitation-phuoc-na/static/js/453.060837b5.chunk.js",
     "static/media/BeautifulInWhite.mp3": "/wedding-invitation-phuoc-na/static/media/BeautifulInWhite.0068693bca9451c3eb58.mp3",
     "static/media/ROM_9030-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_9030-optimised.ec403e9a35509da438fa.jpg",
@@ -39,9 +39,9 @@
     "static/media/ROM_9165_crop-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_9165_crop-optimised.390f23df2c2ea02e3afd.jpg",
     "static/media/ROM_8517-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_8517-optimised.e81e6234f89c51284b3f.jpg",
     "static/media/LoveStory3.png": "/wedding-invitation-phuoc-na/static/media/LoveStory3.327f198af2224f89587a.png",
+    "static/media/LoveStory4.png": "/wedding-invitation-phuoc-na/static/media/LoveStory4.bef143dd36d5a0f5cf35.png",
+    "static/media/LoveStory2.png": "/wedding-invitation-phuoc-na/static/media/LoveStory2.077da21726ff2b382a35.png",
     "static/media/ROM_8283-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_8283-optimised.b48cb441a520d8b4691e.jpg",
-    "static/media/LoveStory4.png": "/wedding-invitation-phuoc-na/static/media/LoveStory4.70ec585fe5d27ab41d18.png",
-    "static/media/LoveStory2.png": "/wedding-invitation-phuoc-na/static/media/LoveStory2.613e422b3e997500d26c.png",
     "static/media/ROM_8646-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_8646-optimised.77079b324dda7e4d0312.jpg",
     "static/media/LoveStory1.png": "/wedding-invitation-phuoc-na/static/media/LoveStory1.d0792ba37dc3bc42e74b.png",
     "static/media/ROM_8525-optimised.jpg": "/wedding-invitation-phuoc-na/static/media/ROM_8525-optimised.861480baa136224cd4c7.jpg",
@@ -69,11 +69,11 @@
     "static/media/EventTimeline3.png": "/wedding-invitation-phuoc-na/static/media/EventTimeline3.a4d9355935b55a6e16f4.png",
     "index.html": "/wedding-invitation-phuoc-na/index.html",
     "main.4871281f.css.map": "/wedding-invitation-phuoc-na/static/css/main.4871281f.css.map",
-    "main.75b15176.js.map": "/wedding-invitation-phuoc-na/static/js/main.75b15176.js.map",
+    "main.dc811790.js.map": "/wedding-invitation-phuoc-na/static/js/main.dc811790.js.map",
     "453.060837b5.chunk.js.map": "/wedding-invitation-phuoc-na/static/js/453.060837b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4871281f.css",
-    "static/js/main.75b15176.js"
+    "static/js/main.dc811790.js"
   ]
 }

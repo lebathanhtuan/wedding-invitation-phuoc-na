@@ -31,8 +31,8 @@ export const vi = {
         'Đối với chúng mình hôn nhân không phải là đích đến cuối của tình yêu mà là khởi đầu của hạnh phúc.',
       label: 'Nhà Trai',
       family: {
-        father: 'Ông. Lê Bá Thanh',
-        mother: 'Bà. Châu Thị Xuân',
+        father: 'Ông. Nguyễn Văn Ngọc',
+        mother: 'Bà. Lê Thị Phượng',
       },
     },
     bride: {

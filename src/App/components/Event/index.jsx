@@ -109,7 +109,7 @@ function Event() {
                         29/03/2026
                       </T.Text>
                       <T.Text color="primary" font="cambria">
-                        11h30
+                        10h30
                       </T.Text>
                     </>
                   ),

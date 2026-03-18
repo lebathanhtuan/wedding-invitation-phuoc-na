@@ -9,6 +9,7 @@ import invitationDecorate1 from 'src/assets/images/InvitationDecorate1.png'
 import invitationDecorate2 from 'src/assets/images/InvitationDecorate2.png'
 import invitationDecorate3 from 'src/assets/images/InvitationDecorate3.png'
 import invitationDecorate4 from 'src/assets/images/InvitationDecorate4.png'
+import InvitationDecorate5 from 'src/assets/images/InvitationDecorate5.png'
 
 import * as S from './styled'
 
@@ -21,6 +22,7 @@ function Invitation() {
       <S.InvitationDecorate2 src={invitationDecorate2} />
       <S.InvitationDecorate3 src={invitationDecorate3} />
       <S.InvitationDecorate4 src={invitationDecorate4} />
+      <S.InvitationDecorate5 src={InvitationDecorate5} />
       <Container>
         <S.InvitationContainer>
           <T.Text size="sm" align="center" style={{ fontSize: 11 }}>

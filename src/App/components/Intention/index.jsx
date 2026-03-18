@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Container from 'src/components/Container'
 import T from 'src/components/Typography'
 
-// import heartPhotosImage from 'src/assets/images/HeartPhotos.png'
+import heartPhotosImage from 'src/assets/images/HeartPhotos.png'
 import justMarriedImage from 'src/assets/images/JustMarried.png'
 import brideGroomPaintImage from 'src/assets/images/BrideGroomPaint5.png'
 
@@ -32,7 +32,7 @@ function Intention() {
               <T.Text size="lg" align="center" style={{ marginBottom: 16 }}>
                 {t('intention.label1')} <br /> {t('intention.label2')}
               </T.Text>
-              {/* <img src={heartPhotosImage} alt="Heart Photos" /> */}
+              <img src={heartPhotosImage} alt="Heart Photos" />
             </Flex>
           </Col>
         </Row>

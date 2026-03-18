@@ -6,7 +6,7 @@ export const InvitationWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 180px 0;
+  padding: 200px 0 150px;
   background-image: url(${({ $background }) => $background});
   background-repeat: repeat;
 
@@ -60,4 +60,12 @@ export const InvitationDecorate3 = styled(InvitationDecorate)`
 export const InvitationDecorate4 = styled(InvitationDecorate)`
   bottom: 0;
   right: 0;
+`
+
+export const InvitationDecorate5 = styled(InvitationDecorate)`
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  opacity: 0.9;
 `

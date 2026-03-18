@@ -3,6 +3,9 @@ import { FloatButton } from 'antd'
 import { useTranslation } from 'react-i18next'
 
 import Header from 'src/layouts/Header'
+import MusicControl from 'src/components/MusicControl'
+import { useAudioPlayer } from 'src/hooks/useAudioPlayer'
+import weddingMusic from 'src/assets/musics/BeautifulInWhite.mp3'
 import Overview from './components/Overview'
 import Invitation from './components/Invitation'
 import Couple from './components/Couple'
@@ -20,6 +23,7 @@ import * as S from './styled'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+  const { isPlaying, toggle } = useAudioPlayer(weddingMusic)
 
   const { t } = useTranslation()
 
@@ -61,10 +65,13 @@ function App() {
             <Map />
             <Thanks />
           </main>
-          <FloatButton.BackTop
-            type="primary"
-            tooltip={<div>{t('common.backToTop')}</div>}
-          />
+          <FloatButton.Group shape="circle">
+            <MusicControl isPlaying={isPlaying} onToggle={toggle} />
+            <FloatButton.BackTop
+              type="primary"
+              tooltip={<div>{t('common.backToTop')}</div>}
+            />
+          </FloatButton.Group>
         </S.AppContent>
       </S.AppContainer>
     </S.AppWrapper>

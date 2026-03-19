@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback } from 'react'
+import confetti from 'canvas-confetti'
 import { Flex } from 'antd'
 import T from 'src/components/Typography'
 import PhotoLightbox from 'src/components/PhotoLightbox'
@@ -24,6 +25,37 @@ export default function App() {
       const isCurrentlyOpen =
         containerRef.current.getAttribute('data-open') === 'true'
       containerRef.current.setAttribute('data-open', String(!isCurrentlyOpen))
+
+      if (!isCurrentlyOpen) {
+        const rect = containerRef.current.getBoundingClientRect()
+        const origin = {
+          x: (rect.left + rect.width / 2) / window.innerWidth,
+          y: (rect.top + rect.height / 2) / window.innerHeight,
+        }
+        const colors = [
+          '#912928',
+          '#a33f3d',
+          '#f5c6c6',
+          '#e8d5b7',
+          '#fff9f2',
+          '#fff',
+        ]
+
+        const fire = (particleRatio, opts) =>
+          confetti({
+            origin,
+            colors,
+            ticks: 300,
+            particleCount: Math.floor(300 * particleRatio),
+            ...opts,
+          })
+
+        fire(0.25, { spread: 26, startVelocity: 55 })
+        fire(0.2, { spread: 60 })
+        fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 })
+        fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 })
+        fire(0.1, { spread: 120, startVelocity: 45 })
+      }
     }
   }, [])
 

@@ -96,7 +96,7 @@ export const vi = {
     },
   },
   engagement: {
-    title: 'Lễ Dặm Ngõ của chúng mình!',
+    title: 'Lễ Dạm Ngõ của chúng mình!',
     description: 'Tình yêu không phải là những lời thề non hẹn biển,',
     subDescription: 'chỉ đơn giản là cùng nhau bình yên qua ngày.',
   },

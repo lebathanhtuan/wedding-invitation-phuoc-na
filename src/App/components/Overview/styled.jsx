@@ -167,6 +167,7 @@ export const Letter1 = styled(Letter)`
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 26px;
   border-radius: 6px;
   transition: box-shadow 0.3s;
+  cursor: pointer;
 
   &::after {
     transition: all 0.3s;
@@ -203,6 +204,7 @@ export const Letter2 = styled(Letter)`
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 26px;
   border-radius: 6px;
   transition: box-shadow 0.3s;
+  cursor: pointer;
 
   &::after {
     transition: all 0.3s;

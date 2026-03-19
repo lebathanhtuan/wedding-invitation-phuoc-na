@@ -18,7 +18,7 @@ export const EngagementInner = styled.div`
 export const EngagementContainer = styled.div`
   position: relative;
   width: 100%;
-  padding-top: 75%; /* 4:3 */
+  padding-top: 85%; /* 4:3 */
 `
 
 export const EngagementContent = styled.div`
@@ -30,7 +30,7 @@ export const EngagementContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 17% 0 15%;
+  padding: 16% 0 15%;
 
   & h2 {
     font-size: 22px;

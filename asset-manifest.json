@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-invitation-phuoc-na/static/css/main.0214dd7c.css",
-    "main.js": "/wedding-invitation-phuoc-na/static/js/main.ec31adec.js",
+    "main.js": "/wedding-invitation-phuoc-na/static/js/main.8c3b2755.js",
     "static/js/453.060837b5.chunk.js": "/wedding-invitation-phuoc-na/static/js/453.060837b5.chunk.js",
     "static/media/BeautifulInWhite.mp3": "/wedding-invitation-phuoc-na/static/media/BeautifulInWhite.0068693bca9451c3eb58.mp3",
     "static/media/PlayBackground.gif": "/wedding-invitation-phuoc-na/static/media/PlayBackground.48a499795fdcbea7a52d.gif",
@@ -122,11 +122,11 @@
     "static/media/EventTimeline3.png": "/wedding-invitation-phuoc-na/static/media/EventTimeline3.a4d9355935b55a6e16f4.png",
     "index.html": "/wedding-invitation-phuoc-na/index.html",
     "main.0214dd7c.css.map": "/wedding-invitation-phuoc-na/static/css/main.0214dd7c.css.map",
-    "main.ec31adec.js.map": "/wedding-invitation-phuoc-na/static/js/main.ec31adec.js.map",
+    "main.8c3b2755.js.map": "/wedding-invitation-phuoc-na/static/js/main.8c3b2755.js.map",
     "453.060837b5.chunk.js.map": "/wedding-invitation-phuoc-na/static/js/453.060837b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0214dd7c.css",
-    "static/js/main.ec31adec.js"
+    "static/js/main.8c3b2755.js"
   ]
 }

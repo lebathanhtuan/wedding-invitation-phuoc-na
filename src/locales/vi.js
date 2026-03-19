@@ -85,7 +85,7 @@ export const vi = {
         'Có những khoảnh khắc chúng ta mãi ghi nhớ như cột mốc trong đời, là khoảng khắc anh ngỏ lời mong em theo anh về nhà.',
     },
     engagementDay: {
-      title: 'Ngày Lễ Dặm Ngõ',
+      title: 'Ngày Lễ Dạm Ngõ',
       description:
         'Chặng đường nào rồi cũng phải có đích đến. Nếu hạnh phúc là một con đường thì anh và em đang dần đi đến chặng đường cuối trong cuộc hành trình đầy cảm xúc này.',
     },

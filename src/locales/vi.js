@@ -96,7 +96,7 @@ export const vi = {
     },
   },
   engagement: {
-    title: 'Lễ Đính Hôn của chúng mình!',
+    title: 'Lễ Dặm Ngõ của chúng mình!',
     description: 'Tình yêu không phải là những lời thề non hẹn biển,',
     subDescription: 'chỉ đơn giản là cùng nhau bình yên qua ngày.',
   },
@@ -144,7 +144,7 @@ export const vi = {
   thanks: {
     title: 'Trân trọng',
     content:
-      'Cảm ơn mọi người đã luôn đồng hành trong quá trình trưởng thành của Phước và Na, cũng đã là những người chứng kiến và ủng hộ câu chuyện tình yêu của đôi bạn trẻ. Hôn lễ này sẽ chỉ trở nên trọn vẹn khi nhận được những lời chúc phúc và đặc biện là sự có mặt của mọi người trong ngày chung đôi của cô dâu và chú rể.',
+      'Cảm ơn mọi người đã luôn đồng hành trong quá trình trưởng thành của Phước và Na, cũng đã là những người chứng kiến và ủng hộ câu chuyện tình yêu của đôi bạn trẻ. Hôn lễ này sẽ chỉ trở nên trọn vẹn khi nhận được những lời chúc phúc và đặc biệt là sự có mặt của mọi người trong ngày chung đôi của cô dâu và chú rể.',
   },
   video: {
     play: 'Phát',

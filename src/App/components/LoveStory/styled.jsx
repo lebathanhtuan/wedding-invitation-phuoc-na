@@ -3,6 +3,7 @@ import { Col, Flex } from 'antd'
 import T from 'src/components/Typography'
 
 export const LoveStoryWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

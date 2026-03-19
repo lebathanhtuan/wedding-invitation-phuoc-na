@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { FloatButton } from 'antd'
 import { useTranslation } from 'react-i18next'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import Header from 'src/layouts/Header'
 import MusicControl from 'src/components/MusicControl'
@@ -10,6 +12,7 @@ import Overview from './components/Overview'
 import Invitation from './components/Invitation'
 import Couple from './components/Couple'
 import LoveStory from './components/LoveStory'
+import ProposalCeremony from './components/ProposalCeremony'
 import Event from './components/Event'
 import Intention from './components/Intention'
 import Map from './components/Map'
@@ -39,6 +42,18 @@ function App() {
     return () => clearTimeout(timer)
   }, [])
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 120,
+      easing: 'ease-out',
+    })
+
+    const onLoad = () => AOS.refresh()
+    window.addEventListener('load', onLoad)
+    return () => window.removeEventListener('load', onLoad)
+  }, [])
+
   return (
     <S.AppWrapper>
       <S.LeftDoor
@@ -60,6 +75,7 @@ function App() {
             <Couple />
             <Invitation />
             <LoveStory />
+            <ProposalCeremony />
             <Event />
             <Intention />
             <Map />

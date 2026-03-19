@@ -24,6 +24,13 @@ export const AppContent = styled.div`
   max-width: 500px;
   min-width: 375px;
   background-color: #fff;
+  overflow-x: hidden;
+
+  .ant-float-btn-circle .ant-float-btn-body {
+    box-shadow:
+      0 0 0 2px white,
+      0 6px 16px 0 rgba(0, 0, 0, 0.08);
+  }
 `
 
 export const Door = styled.div`

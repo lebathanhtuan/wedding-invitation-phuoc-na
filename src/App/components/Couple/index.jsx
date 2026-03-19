@@ -1,13 +1,7 @@
 import { useState } from 'react'
 import { Row, Col, Flex } from 'antd'
-import Lightbox from 'yet-another-react-lightbox'
 import { useTranslation } from 'react-i18next'
-// import optional lightbox plugins
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
-import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
-import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import PhotoLightbox from 'src/components/PhotoLightbox'
 
 import Container from 'src/components/Container'
 import T from 'src/components/Typography'
@@ -21,14 +15,7 @@ import coupleBorderImage from 'src/assets/images/CoupleBorder.png'
 import coupleBorderLeftImage from 'src/assets/images/CoupleBorderLeft.png'
 import coupleBorderRightImage from 'src/assets/images/CoupleBorderRight.png'
 import coupleBorderBottomImage from 'src/assets/images/CoupleBorderBottom.png'
-import image1 from 'src/assets/photos/ROM_9491-optimised.jpg'
-import image2 from 'src/assets/photos/ROM_9246-optimised.jpg'
-import image3 from 'src/assets/photos/ROM_9274-optimised.jpg'
-import image4 from 'src/assets/photos/ROM_9311-optimised.jpg'
-import image5 from 'src/assets/photos/ROM_9397-optimised.jpg'
-import image6 from 'src/assets/photos/ROM_9432-optimised.jpg'
-import image7 from 'src/assets/photos/ROM_9448-optimised.jpg'
-import image8 from 'src/assets/photos/ROM_9465-optimised.jpg'
+import photos from './photos'
 
 import * as S from './styled'
 
@@ -45,7 +32,7 @@ function Couple() {
         <Row gutter={[16, 16]} align={{ lg: 'middle', xs: 'stretch' }}>
           <Col span={24}>
             <S.CoupleRow>
-              <Col span={10}>
+              <Col span={10} data-aos="fade-right">
                 <Flex align="center" justify="center" vertical>
                   <T.Text size="xl" color="light">
                     {t('couple.groom.label')}
@@ -62,7 +49,7 @@ function Couple() {
                   <S.MiddleImage src={coupleMiddleImage} alt="" />
                 </Flex>
               </Col>
-              <Col span={10}>
+              <Col span={10} data-aos="fade-left">
                 <Flex align="center" justify="center" vertical>
                   <T.Text size="xl" color="light">
                     {t('couple.bride.label')}
@@ -78,7 +65,7 @@ function Couple() {
           </Col>
           <Col span={12}>
             <Flex align="center" justify="center" vertical>
-              <S.ImageWrapper>
+              <S.ImageWrapper data-aos="fade-right">
                 <S.ImageContainer>
                   <S.ImageContent $background={coupleBorderImage}>
                     <S.ImageItem
@@ -90,17 +77,17 @@ function Couple() {
                   </S.ImageContent>
                 </S.ImageContainer>
               </S.ImageWrapper>
-              <S.CoupleName color="light" font="hoatay1">
+              <S.CoupleName color="light" font="hoatay1" data-aos="fade-right">
                 {t('couple.groom.name')}
               </S.CoupleName>
-              <T.Text color="light" align="center">
+              <T.Text color="light" align="center" data-aos="fade-right">
                 {t('couple.groom.description')}
               </T.Text>
             </Flex>
           </Col>
           <Col span={12}>
             <Flex align="center" justify="center" vertical>
-              <S.ImageWrapper>
+              <S.ImageWrapper data-aos="fade-left">
                 <S.ImageContainer>
                   <S.ImageContent $background={coupleBorderImage}>
                     <S.ImageItem
@@ -111,10 +98,10 @@ function Couple() {
                   </S.ImageContent>
                 </S.ImageContainer>
               </S.ImageWrapper>
-              <S.CoupleName color="light" font="hoatay1">
+              <S.CoupleName color="light" font="hoatay1" data-aos="fade-left">
                 {t('couple.bride.name')}
               </S.CoupleName>
-              <T.Text color="light" align="center">
+              <T.Text color="light" align="center" data-aos="fade-left">
                 {t('couple.bride.description')}
               </T.Text>
             </Flex>
@@ -124,24 +111,10 @@ function Couple() {
       <S.CoupleBorderLeft src={coupleBorderLeftImage} alt="" />
       <S.CoupleBorderRight src={coupleBorderRightImage} alt="" />
       <S.CoupleBorderBottom $background={coupleBorderBottomImage} />
-      <Lightbox
-        slides={[
-          image1,
-          image2,
-          image3,
-          image4,
-          image5,
-          image6,
-          image7,
-          image8,
-        ].map((src, index) => ({
-          src,
-        }))}
-        open={lightboxActiveIndex >= 0}
-        index={lightboxActiveIndex}
-        close={() => setLightboxActiveIndex(-1)}
-        // enable optional lightbox plugins
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+      <PhotoLightbox
+        photos={photos}
+        activeIndex={lightboxActiveIndex}
+        onClose={() => setLightboxActiveIndex(-1)}
       />
     </S.CoupleWrapper>
   )

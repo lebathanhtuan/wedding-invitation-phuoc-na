@@ -1,14 +1,8 @@
 import { useState } from 'react'
 import { Row, Col } from 'antd'
 import moment from 'moment'
-import Lightbox from 'yet-another-react-lightbox'
 import { useTranslation } from 'react-i18next'
-// import optional lightbox plugins
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
-import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
-import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import PhotoLightbox from 'src/components/PhotoLightbox'
 
 import Container from 'src/components/Container'
 import T from 'src/components/Typography'
@@ -17,17 +11,7 @@ import { WEDDING_DAY } from 'src/constants/wedding'
 import leftImage from 'src/assets/photos/ROM_8780_crop-optimised.jpg'
 import middleImage from 'src/assets/photos/ROM_8965_crop-optimised.jpg'
 import rightImage from 'src/assets/photos/ROM_9165_crop-optimised.jpg'
-import image1 from 'src/assets/photos/ROM_8780-optimised.jpg'
-import image2 from 'src/assets/photos/ROM_8965-optimised.jpg'
-import image3 from 'src/assets/photos/ROM_9165-optimised.jpg'
-import image4 from 'src/assets/photos/ROM_8788-optimised.jpg'
-import image5 from 'src/assets/photos/ROM_8847-optimised.jpg'
-import image6 from 'src/assets/photos/ROM_8912-optimised.jpg'
-import image7 from 'src/assets/photos/ROM_8988-optimised.jpg'
-import image8 from 'src/assets/photos/ROM_9030-optimised.jpg'
-import image9 from 'src/assets/photos/ROM_9123-optimised.jpg'
-import image10 from 'src/assets/photos/ROM_9200-optimised.jpg'
-import image11 from 'src/assets/photos/ROM_8717-optimised.jpg'
+import photos from './photos'
 import loveStory1Image from 'src/assets/images/LoveStory1.png'
 import loveStory2Image from 'src/assets/images/LoveStory2.png'
 import loveStory3Image from 'src/assets/images/LoveStory3.png'
@@ -47,19 +31,25 @@ function LoveStory() {
           <Col span={8}>
             <S.ImageWrapper onClick={() => setLightboxActiveIndex(0)}>
               <S.ImageContent src={leftImage} />
-              <S.ImageLabel>{moment(WEDDING_DAY).format('DD')}</S.ImageLabel>
+              <S.ImageLabel data-aos="fade-left">
+                {moment(WEDDING_DAY).format('DD')}
+              </S.ImageLabel>
             </S.ImageWrapper>
           </Col>
           <Col span={8}>
             <S.ImageWrapper onClick={() => setLightboxActiveIndex(1)}>
               <S.ImageContent src={middleImage} />
-              <S.ImageLabel>{moment(WEDDING_DAY).format('MM')}</S.ImageLabel>
+              <S.ImageLabel data-aos="fade-left">
+                {moment(WEDDING_DAY).format('MM')}
+              </S.ImageLabel>
             </S.ImageWrapper>
           </Col>
           <Col span={8}>
             <S.ImageWrapper onClick={() => setLightboxActiveIndex(2)}>
               <S.ImageContent src={rightImage} />
-              <S.ImageLabel>{moment(WEDDING_DAY).format('YY')}</S.ImageLabel>
+              <S.ImageLabel data-aos="fade-left">
+                {moment(WEDDING_DAY).format('YY')}
+              </S.ImageLabel>
             </S.ImageWrapper>
           </Col>
         </Row>
@@ -77,10 +67,10 @@ function LoveStory() {
           </T.Title>
         </S.LoveStoryTitle>
         <Row gutter={[32, -16]}>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-right">
             <img src={loveStory1Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-right">
             <T.Title size="xxl" color="primary">
               {t('loveStory.theFirstDay.title')}
             </T.Title>
@@ -88,10 +78,10 @@ function LoveStory() {
               {t('loveStory.theFirstDay.description')}
             </T.Text>
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-left">
             <img src={loveStory2Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-left">
             <T.Title size="xxl" color="primary">
               {t('loveStory.firstLoveDay.title')}
             </T.Title>
@@ -99,10 +89,10 @@ function LoveStory() {
               {t('loveStory.firstLoveDay.description')}
             </T.Text>
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-right">
             <img src={loveStory3Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-right">
             <T.Title size="xxl" color="primary">
               {t('loveStory.theLoveJourney.title')}
             </T.Title>
@@ -110,10 +100,10 @@ function LoveStory() {
               {t('loveStory.theLoveJourney.description')}
             </T.Text>
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-left">
             <img src={loveStory4Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-left">
             <T.Title size="xxl" color="primary">
               {t('loveStory.sheSayYes.title')}
             </T.Title>
@@ -121,10 +111,10 @@ function LoveStory() {
               {t('loveStory.sheSayYes.description')}
             </T.Text>
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-right">
             <img src={loveStory5Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-right">
             <T.Title size="xxl" color="primary">
               {t('loveStory.engagementDay.title')}
             </T.Title>
@@ -132,10 +122,10 @@ function LoveStory() {
               {t('loveStory.engagementDay.description')}
             </T.Text>
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24}>
+          <S.LoveStoryCol span={24} data-aos="fade-left">
             <img src={loveStory6Image} alt="" />
           </S.LoveStoryCol>
-          <S.LoveStoryCol span={24} $right>
+          <S.LoveStoryCol span={24} $right data-aos="fade-left">
             <T.Title size="xxl" color="primary">
               {t('loveStory.theWedding.title')}
             </T.Title>
@@ -145,27 +135,10 @@ function LoveStory() {
           </S.LoveStoryCol>
         </Row>
       </Container>
-      <Lightbox
-        slides={[
-          image1,
-          image2,
-          image3,
-          image4,
-          image5,
-          image6,
-          image7,
-          image8,
-          image9,
-          image10,
-          image11,
-        ].map((src, index) => ({
-          src,
-        }))}
-        open={lightboxActiveIndex >= 0}
-        index={lightboxActiveIndex}
-        close={() => setLightboxActiveIndex(-1)}
-        // enable optional lightbox plugins
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+      <PhotoLightbox
+        photos={photos}
+        activeIndex={lightboxActiveIndex}
+        onClose={() => setLightboxActiveIndex(-1)}
       />
     </S.LoveStoryWrapper>
   )

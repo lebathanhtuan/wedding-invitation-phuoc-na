@@ -24,7 +24,7 @@ function Invitation() {
       <S.InvitationDecorate4 src={invitationDecorate4} />
       <S.InvitationDecorate5 src={InvitationDecorate5} />
       <Container>
-        <S.InvitationContainer>
+        <S.InvitationContainer data-aos="fade-up">
           <T.Text size="sm" align="center" style={{ fontSize: 11 }}>
             {t('invitation.title')}
             <br />

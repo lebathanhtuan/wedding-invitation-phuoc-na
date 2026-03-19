@@ -5,6 +5,7 @@ import { Timeline } from 'antd'
 import T from 'src/components/Typography'
 
 export const EventWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,13 +26,15 @@ export const EventLeft = styled.div`
   margin-bottom: 16px;
 
   & img {
-    max-width: 420px;
+    max-width: 400px;
     width: 100%;
     height: auto;
   }
 `
 
 export const EventTimeline = styled(Timeline)`
+  margin-top: 24px;
+
   .ant-timeline-item-tail {
     border-color: ${({ theme }) => theme.colors.primary};
   }

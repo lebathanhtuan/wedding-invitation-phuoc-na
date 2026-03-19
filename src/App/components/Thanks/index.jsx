@@ -18,7 +18,7 @@ function Quote() {
           <T.Title level={1} color="primary">
             {t('thanks.title')}
           </T.Title>
-          <S.ThanksContent>
+          <S.ThanksContent data-aos="fade-up">
             <T.Text color="primary" weight="bold" size="lg" align="justify">
               {t('thanks.content')}
             </T.Text>

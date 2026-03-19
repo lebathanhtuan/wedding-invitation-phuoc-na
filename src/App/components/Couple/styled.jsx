@@ -22,8 +22,14 @@ export const CoupleWrapper = styled.div`
     background-size: contain;
     background-position: 50% 80%;
     background-attachment: fixed;
+    background-color: ${({ theme }) => theme.colors.primary};
     filter: grayscale(100%);
     z-index: 0;
+
+    @media (hover: none) and (pointer: coarse) {
+      background-attachment: scroll;
+      background-size: cover;
+    }
   }
 
   &::after {

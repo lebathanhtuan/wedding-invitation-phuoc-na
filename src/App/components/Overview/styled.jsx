@@ -83,6 +83,7 @@ export const EnvelopeContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
   z-index: 1;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
   animation: 3s ease-in-out 0s infinite normal none running ${floatAnimation};
 `
 
@@ -139,6 +140,7 @@ export const Letter = styled.div`
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  will-change: transform;
 
   &::after {
     content: '';
